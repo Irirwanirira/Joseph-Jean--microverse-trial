@@ -1,11 +1,20 @@
-body {
-    margin: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+ 
+   @media screen and (min-width: 480px) {
+    body {
+        margin: 0;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    }
+
+
 
 .top-bar {
+    position: fixed;
     background-color: #be3144;
     text-align: right;
+    right: 0;
+    left: 0;
+    
 }
 .top-bar a {
     color: #fff;
@@ -17,14 +26,17 @@ body {
     list-style: none;
     display: inline-block;
     margin: 0;
+    
 }
 
 .top-bar ul li {
     display: inline-block;
     padding: 20px;
+    
 }
 .top-bar ul li:hover {
     background-color:aquamarine;
+    
 }
 
 
@@ -62,7 +74,7 @@ body {
     background-color:#333;
     text-align: center;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 15px 40px;
 }
 .project-list .grid a {
     text-decoration: none;
@@ -76,4 +88,55 @@ body {
 .project-list .grid img {
     width: 100%;
     height: 300px;
+}
+.project-list .next {
+    width: 30%;
+    background-color:#333;
+    text-align: center;
+    display: inline-block;
+    margin: 0 15px;
+   
+}
+.project-list .next a {
+    text-decoration: none;
+    color: #fff;
+}
+.project-list .next p {
+    margin: 0;
+    padding: 15px 15px;
+    font-size: 20px;
+}
+.project-list .next img {
+    width: 100%;
+    height: 300px;
+}
+.origin{
+/* text-align: center;
+border-style: block; */
+display: flex;
+gap: 3px;
+margin-top: 20px;
+justify-content: center;
+justify-items: center;
+background-color:#333;
+width: 12%;
+margin: 20px auto 0;
+}
+
+.origin:hover {
+ background-color: #be3144;
+ gap: 6px;
+}
+
+.origin a{
+    font-size: 15px;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+.origin i{
+    font-size: 15px;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
 }
